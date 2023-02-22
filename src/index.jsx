@@ -111,6 +111,13 @@ export const InputDate = ({ name, text, value, onDateChange=null }) => {
   const [currentDate, setCurrentDate] = useState(value);
   const inputDateRef = useRef(null)
 
+  const dateChanged = (date) => {
+
+    setCurrentDate(date);
+    if (onDateChange !== null) {
+      onDateChange(date)
+    }
+  }
   return (
     <div className="date-time-picker"
       ref={inputDateRef}
@@ -124,24 +131,15 @@ export const InputDate = ({ name, text, value, onDateChange=null }) => {
         id={'id-'+name}
         type="date"
         value={currentDate}
-        onChange={(e) => {
-          if (onDateChange !== null) { onDateChange(e.target.value) }
-          setCurrentDate(e.target.value);
-        }}
-        onClick={(e) => {
-          setCalendarSelect(!calendarSelect);
-        }}
+        onChange={e => dateChanged(e.target.value)}
+        onClick={() => setCalendarSelect(!calendarSelect)}
         />
       <Calendar
         value={currentDate}
         className={"calendar" + (calendarSelect ? " show" : "")}
-        changeState={(state) => setCalendarSelect(state)}
-        onDateChange={(date) => {
-          setCurrentDate(date);
-        }}
-        onBlur={() => {
-          setCalendarSelect(false);
-        }}
+        changeState={state => setCalendarSelect(state)}
+        onDateChange={date => dateChanged(date)}
+        onBlur={() => setCalendarSelect(false)}
       />
     </div>
   );
