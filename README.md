@@ -10,7 +10,7 @@ A simple-to-use React date picker library with interesting features
 [![NPM](https://img.shields.io/npm/v/react-date-modify)](https://www.npmjs.com/package/react-date-modify) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## :mag_right: Preview
-![image](https://raw.githubusercontent.com/olivierbussier/react-date-modify/main/image-doc/screen.png)
+![image](https://raw.githubusercontent.com/olivierbussier/react-date-modify/image-doc/screen.png)
 
 ## Live demo
 https://olivierbussier.github.io/react-date-modify/
