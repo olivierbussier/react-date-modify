@@ -32,12 +32,10 @@
     "rollup-plugin-sass": "^1.12.17",
     "rollup-plugin-serve": "^2.0.2",
     "rollup-plugin-typescript2": "^0.34.1",
+    "@babel/core": "^7.21.0",
     "sass": "^1.58.3"
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "@babel/core": "^7.21.0"
-  }
+  ]
 }
