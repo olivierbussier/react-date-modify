@@ -8,7 +8,9 @@ const App = () => {
   return (
     <div style={{ maxWidth: 300, width: '100%', margin: '15px auto' }}>
       <h1>Choosen date is : {currentDate}</h1>
-      <InputDate name='nom' text='Enter a date' value={currentDate} onDateChange={date => setCurrentDate(date)}/>
+      <InputDate name='nom' text='Enter a date' value={currentDate} onDateChange={
+        date => {setCurrentDate(date)}
+      }/>
     </div>
   )
 }

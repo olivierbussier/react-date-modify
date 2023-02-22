@@ -30,7 +30,7 @@ import {Datatable} from 'react-data-table-modify'
 
 const App = () => {
 
-    return <InputDate name={} text={} value={} />
+    return <InputDate name={} text={} value={} onDateChange={}/>
 
 }
 ```
@@ -41,20 +41,25 @@ const App = () => {
 | ---- | ----------- |
 |name|This prop is used to give a name to the input.|
 |text|This string is used to define the associated lable message|
-|value| This field is the initial value of the InputDate
+|value| This field is the initial value of the InputDate|
+|onDateChange|Method called when a new date is selected in the component
 
 # example
 
 ```jsx
-import React from 'react'
+import React, { useState } from 'react'
 
 import { InputDate } from 'react-date-modify'
 
 const App = () => {
 
+  const [currentDate, setCurrentDate] = useState('2012-01-02')
   return (
     <div style={{ maxWidth: 300, width: '100%', margin: '15px auto' }}>
-      <InputDate name='nom' text='Enter a date' value='2012-02-02' />
+      <h1>Choosen date is : {currentDate}</h1>
+      <InputDate name='nom' text='Enter a date' value={currentDate} onDateChange={
+        date => {setCurrentDate(date)}
+      }/>
     </div>
   )
 }
