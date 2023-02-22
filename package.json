@@ -1,6 +1,6 @@
 {
   "name": "react-date-modify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Date picker with enhanced capabilities to replace jQuery datatable",
   "author": "olivierbussier",
   "license": "MIT",

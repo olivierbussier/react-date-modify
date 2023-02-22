@@ -106,7 +106,7 @@ const formatDate = (d) => {
  * @param {*} param0
  * @returns
  */
-export const InputDate = ({ name, text, value }) => {
+export const InputDate = ({ name, text, value, onDateChange=null }) => {
   const [calendarSelect, setCalendarSelect] = useState(false);
   const [currentDate, setCurrentDate] = useState(value);
   const inputDateRef = useRef(null)
@@ -125,6 +125,7 @@ export const InputDate = ({ name, text, value }) => {
         type="date"
         value={currentDate}
         onChange={(e) => {
+          if (onDateChange !== null) { onDateChange(e.target.value) }
           setCurrentDate(e.target.value);
         }}
         onClick={(e) => {
