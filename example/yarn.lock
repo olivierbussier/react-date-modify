@@ -7515,10 +7515,10 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
-react-data-table-modify@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/react-data-table-modify/-/react-data-table-modify-1.1.0.tgz"
-  integrity sha512-s6IwIsCSeMA9p4pQJIEXMpy+KjFFkzZ5xPrmPGBKVvTCI0tbAV8/sqj8yZWugt8xEktnt7dLdqTlXVbY6u1vIQ==
+react-date-modify@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-date-modify/-/react-date-modify-1.0.2.tgz#9652836c3d10dd45a8164bf27428a6afc7a1cd40"
+  integrity sha512-zO1ESYnDalNPcJHEh7eEiK3UVoNSri8P4XrL2l2DjFqWUcbqhTKO8fWW8PFE3Ds7Eu//BtzYo/XcxJuV0Ftpqw==
 
 react-dev-utils@^12.0.1:
   version "12.0.1"
