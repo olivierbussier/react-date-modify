@@ -1,9 +1,10 @@
 {
   "name": "react-date-modify",
-  "version": "1.0.8",
-  "description": "React Date picker with enhanced capabilities to replace jQuery datatable",
+  "version": "1.0.9",
+  "description": "React Date picker with enhanced capabilities to replace jQuery date picker",
   "author": "olivierbussier",
   "license": "MIT",
+  "keywords": ["date picker", "date", "jquery"],
   "repository": "olivierbussier/react-date-modify",
   "main": "dist/index.js",
   "source": "src/index.jsx",
